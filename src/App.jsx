@@ -79,7 +79,7 @@ function App() {
           {
             todos.map((val, i) => {
               return (
-                <div key={i} className='flex justify-between border-[1px] w-full m-2 md:w-[90%] py-2 px-3 md:mx-4 mx-0 mb-1 border-white'>
+                <div key={i} className='flex justify-between border-[1px] w-[95%] m-2 md:w-[90%] py-2 px-3 md:mx-4 mx-0 mb-1 border-white'>
                   <input
                     type="text"
                     disabled={isDisable[i]}
