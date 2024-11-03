@@ -80,7 +80,8 @@ function App() {
             todos.map((val, i) => {
               return (
                 <div key={i} className='flex justify-between border-[1px] w-[95%] m-2 md:w-[90%] py-2 px-3 md:mx-4 mx-0 mb-1 border-white'>
-                  <input
+                  <div className='overflow-x-scroll w-auto'>
+                    <input
                     type="text"
                     disabled={isDisable[i]}
                     onKeyDown={handleupdated}
@@ -89,6 +90,7 @@ function App() {
                     onChange={(e) => handleEditChange(e, i)}
                     className={`${isDone[i] ? "line-through" : ""} bg-black text-gray-300 font-semibold text-sm md:text-xl`}
                   />
+                  </div>
 
                   <div className='btns flex gap-1'>
                     {isDisable[i] && (
