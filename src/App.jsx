@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './App.css';
 import { Check, Pencil, Trash2, Undo } from 'lucide-react';
 
 function App() {
